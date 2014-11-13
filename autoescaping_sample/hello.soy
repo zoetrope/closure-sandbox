@@ -1,0 +1,12 @@
+{namespace example}
+
+/**
+ * @param name
+ */
+{template .helloWorld}
+  {let $message kind="html"}
+    <pre>{$name}</pre>
+  {/let}
+
+  {$message}
+{/template}
