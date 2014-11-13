@@ -1,0 +1,14 @@
+{
+  "name": "closure-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "java_sample": "cd java_sample; vertx run HelloSoyVerticle.java -cp ../lib/soy.jar"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "plovr": "^1.1.0"
+  }
+}
