@@ -1,0 +1,17 @@
+{namespace example.templates.compile_time}
+
+/**
+ */
+{template .render}
+  {@param name: string}
+
+  {call .child}
+    {param name: $name /}
+  {/call}
+{/template}
+
+{template .child}
+  {@param name: int}
+
+  Hello, {$name}!
+{/template}
