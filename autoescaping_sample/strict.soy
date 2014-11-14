@@ -1,0 +1,12 @@
+{namespace example.templates.strict}
+
+/**
+ * @param message
+ */
+{template .render autoescape="strict" kind="html"}
+  {let $content kind="html"}
+    <pre>{$message}</pre>
+  {/let}
+
+  {$content}
+{/template}

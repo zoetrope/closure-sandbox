@@ -1,0 +1,12 @@
+{namespace example.templates.contextual}
+
+/**
+ * @param message
+ */
+{template .render autoescape="contextual"}
+  {let $content}
+    <pre>{$message}</pre>
+  {/let}
+
+  {$content}
+{/template}

@@ -1,0 +1,25 @@
+{namespace example.templates.main}
+
+/**
+ * @param message
+ * @param mode
+ */
+{template .render}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  {if $mode == 'strict'}
+    {call example.templates.strict.render}
+      {param message: $message /}
+    {/call}
+  {elseif $mode == 'contextual'}
+    {call example.templates.contextual.render}
+      {param message: $message /}
+    {/call}
+  {/if}
+</body>
+</html>
+{/template}
