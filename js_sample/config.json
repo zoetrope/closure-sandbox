@@ -1,0 +1,7 @@
+{
+  "id": "js_sample",
+  "paths": ["."],
+  "inputs": "app.js",
+  "mode": "ADVANCED",
+  "output-charset": "UTF-8"
+}
