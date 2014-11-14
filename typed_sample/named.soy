@@ -1,0 +1,19 @@
+{namespace example.templates.hello}
+
+/**
+ */
+{template .render}
+  {@param name: hoge}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <pre>
+  Hello, {$name}!
+  </pre>
+</body>
+</html>
+{/template}
