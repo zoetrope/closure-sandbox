@@ -15,10 +15,10 @@ public class HelloJsSoyVerticle extends Verticle {
     HttpServer server = vertx.createHttpServer();
     RouteMatcher matcher = new RouteMatcher();
 
-    SoyFileSet sfs = SoyFileSet.builder()
+    SoyTofu tofu = SoyFileSet.builder()
         .add(new File("main.soy"))
-        .build();
-    SoyTofu tofu = sfs.compileToTofu();
+        .build()
+        .compileToTofu();
 
     matcher.get("/", req -> {
       String output = tofu.newRenderer("example.templates.main.render")

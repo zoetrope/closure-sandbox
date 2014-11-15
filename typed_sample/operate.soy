@@ -1,0 +1,11 @@
+{namespace example.templates.operate}
+
+/**
+ */
+{template .render}
+  {@param x: string}
+  {@param y: [a: int, b:int]}
+
+  x * y = {{$x * $y.a * $y.c}}
+
+{/template}

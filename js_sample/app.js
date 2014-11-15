@@ -4,7 +4,6 @@ goog.require('example.templates.hello');
 goog.require('soy');
 goog.require('goog.net.XhrIo');
 
-
 example.app = function() {
   goog.net.XhrIo.send('/data.json', function(e) {
     var xhr = e.target;

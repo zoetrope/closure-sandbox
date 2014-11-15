@@ -2,7 +2,7 @@
 
 /**
  */
-{template .render}
+{template .parent}
   {@param name: string}
 
   {call .child}
@@ -10,6 +10,8 @@
   {/call}
 {/template}
 
+/**
+ */
 {template .child}
   {@param name: int}
 
